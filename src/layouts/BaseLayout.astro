@@ -1,0 +1,55 @@
+---
+import kam from "../assets/kam-idris-hYb7kbu4x7E-unsplash.jpg";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <div
+      class="absolute flex flex-col inset-0 bg-gradient-to-b from-jade-300 to-jade-900"
+    >
+      <img
+        class="w-1/2 absolute right-0 overflow-y-hidden h-full object-cover z-0"
+        src={kam}
+        alt="Example design"
+      />
+
+      <div
+        class="bg-gray-200/40 shadow-lg px-8 py-4 my-4 max-w-7xl mx-auto w-full text-white rounded-md backdrop-blur-md z-50"
+      >
+        test
+      </div>
+
+      <div class="absolute w-full h-full grow z-30">
+        <div class="max-w-7xl my-28 mx-auto">
+          <slot />
+        </div>
+      </div>
+
+      <div class="absolute bottom-2 w-full z-50">
+        <div
+          class="max-w-xs mx-auto text-center py-1 text-slate-700 bg-slate-200/80 backdrop-blur-sm rounded-md"
+        >
+          this was made with
+          <a
+            class="underline text-blue-600 cursor-pointer"
+            href="https://astro.build/"
+            target="_blank"
+          >
+            asto.build</a
+          > 🚀
+        </div>
+      </div>
+    </div>
+
+    <style>
+
+    </style>
+  </body>
+</html>
